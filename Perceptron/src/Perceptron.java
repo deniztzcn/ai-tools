@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -39,6 +41,7 @@ public class Perceptron {
         for (int i = 0; i < attributes.length; i++) {
             weightedSum += weights[i] * attributes[i];
         }
+
         return weightedSum - bias;
     }
 

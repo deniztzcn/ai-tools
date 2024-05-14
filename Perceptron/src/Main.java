@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -28,6 +29,7 @@ public class Main {
             Perceptron perceptron = new Perceptron(trainingSet);
             perceptron.train(numOfIteration);
 
+
             System.out.println("Please choose operation");
             System.out.println("1- Check accuracy\n" +
                     "2- Classify a vector\n" +
@@ -51,6 +53,7 @@ public class Main {
                 }
             }
         }
+
     }
 
     public static void loadSet(List<InputVector> set,String fileName) throws IOException {
